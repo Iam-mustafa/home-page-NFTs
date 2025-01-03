@@ -1,4 +1,3 @@
-import { Brush, Ticket, Music, Camera, Video, Wand2, ShoppingBasketIcon as Basketball, SpaceIcon as Planet } from 'lucide-react'
 interface Category {
     id: number
     name: string
