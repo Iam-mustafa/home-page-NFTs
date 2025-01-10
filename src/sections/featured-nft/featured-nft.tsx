@@ -55,7 +55,7 @@ export default function FeaturedNFT() {
 
         {/* Content Container */}
         <div className="absolute inset-0 flex items-end">
-          <div className="container mx-auto px-4 md:px-40 pb-20">
+          <div className="container mx-auto px-7 md:px-40 pb-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start md:items-end">
               {/* Left Content */}
               <motion.div 
@@ -100,7 +100,7 @@ export default function FeaturedNFT() {
                   transition={{ delay: 0.9, duration: 0.8 }}
                 >
                   <button 
-                    className="flex items-center w-[40%] space-x-4 bg-[#FF7262] border-transparent border-2 hover:border-[#A259FF] hover:border-2 text-[#1A1A1A] text-sm font-bold rounded-full md:px-12 md:py-4"
+                    className="flex justify-center items-center w-[40%] space-x-4 bg-[#FF7262] border-transparent border-2 hover:border-[#A259FF] hover:border-2 text-[#1A1A1A] text-sm font-bold rounded-full px-2 py-3 md:px-12 md:py-4"
                   >
                     <Eye className="mr-2 h-5 w-5" />
                     See NFT
@@ -110,7 +110,7 @@ export default function FeaturedNFT() {
 
               {/* Right Content - Auction Timer */}
               <motion.div 
-                className="bg-[#3B3B3B80] backdrop-blur-sm rounded-2xl px-6 py-5 w-[270px] ml-auto"
+                className="bg-[#3B3B3B80] backdrop-blur-sm rounded-2xl px-6 py-5 w-auto md:ml-auto"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.1, duration: 0.8 }}
@@ -137,6 +137,18 @@ export default function FeaturedNFT() {
                   </div>
                 </div>
               </motion.div>
+              {/* <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.9, duration: 0.8 }}
+                >
+                  <button 
+                    className="flex justify-center items-center w-[40%] space-x-4 bg-[#FF7262] border-transparent border-2 hover:border-[#A259FF] hover:border-2 text-[#1A1A1A] text-sm font-bold rounded-full px-2 py-3 md:px-12 md:py-4"
+                  >
+                    <Eye className="mr-2 h-5 w-5" />
+                    See NFT
+                  </button>
+                </motion.div> */}
             </div>
           </div>
         </div>

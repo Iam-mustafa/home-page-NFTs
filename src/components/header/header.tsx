@@ -69,11 +69,11 @@ export function Header() {
           </nav>
 
           {/* Sign Up Button */}
-          <button className="flex justify-center items-center space-x-3 md:w-[18%] self-stretch bg-gradient-to-r from-[#A259FF] to-[#377DF7] hover:from-transparent hover:to-transparent border-[#A259FF] border-2 text-white px-3 py-2 md:px-8 md:py-3 rounded-full transition-colors">
+          <button className="flex justify-center items-center space-x-3 w-[18%] self-stretch bg-gradient-to-r from-[#A259FF] to-[#377DF7] hover:from-transparent hover:to-transparent border-[#A259FF] border-2 text-white px-3 py-2 md:px-8 md:py-3 rounded-full transition-colors">
             <Gamepad2 className="w-5 h-5" />
             <span>Player Login</span>
           </button>
-          <button className="flex justify-center items-center space-x-2 md:w-[18%] self-stretch bg-gradient-to-r from-[#A259FF] to-[#377DF7] hover:from-transparent hover:to-transparent border-[#A259FF] border-2 text-white px-3 py-2 md:px-8 md:py-3 rounded-full transition-colors">
+          <button className="flex justify-center items-center space-x-2 w-[18%] self-stretch bg-gradient-to-r from-[#A259FF] to-[#377DF7] hover:from-transparent hover:to-transparent border-[#A259FF] border-2 text-white px-3 py-2 md:px-8 md:py-3 rounded-full transition-colors">
             <CodeSquare className="w-5 h-5" />
             <span>Developer Login</span>
           </button>
