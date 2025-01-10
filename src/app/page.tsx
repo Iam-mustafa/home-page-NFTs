@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <main>
       <LayoutWrapper>
+        <FeaturedNFT />
+        <TrendingCollection />
+        <TopCreators />
+        <BrowseCategories />
+        <DiscoverNFTs />
+        <HowItWorks />
         <Hero />
-        <TrendingCollection/>
-        <TopCreators/>
-        <BrowseCategories/>
-        <DiscoverNFTs/>
-        <FeaturedNFT/>
-        <HowItWorks/>
-        <Digest/>
+        <Digest />
       </LayoutWrapper>
     </main>
   )

@@ -18,13 +18,12 @@ export default function TopCreators() {
                         transition={{ duration: 0.6 }}
                     >
                         <motion.h2
-                            className="text-4xl font-bold text-white"
-                            whileHover={{ scale: 1.02 }}
+                            className="text-4xl font-semibold text-white"
                             transition={{ type: "spring", stiffness: 400, damping: 10 }}
                         >
                             Top Creators
                         </motion.h2>
-                        <motion.p
+                        {/* <motion.p
                             className="text-xl text-white"
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
@@ -32,7 +31,7 @@ export default function TopCreators() {
                             transition={{ delay: 0.2, duration: 0.6 }}
                         >
                             Checkout Top Rated Creators On The NFT Marketplace
-                        </motion.p>
+                        </motion.p> */}
                     </motion.div>
 
                     <motion.div
@@ -42,7 +41,7 @@ export default function TopCreators() {
                         transition={{ duration: 0.6 }}
                     >
                         <button
-                            className="flex h-[50%] items-center space-x-2 bg-transparent border-2 border-[#A259FF] text-white test-xs md:text-md rounded-full px-5 md:px-10 py-3"
+                            className="flex justify-center items-center space-x-2 bg-gradient-to-r from-[#A259FF] to-[#377DF7] hover:from-transparent hover:to-transparent border-2 border-[#A259FF] text-white test-xs md:text-md rounded-full px-5 md:px-10 py-3"
                         >
                             <RocketIcon className="h-5 w-6 mr-2" />
                             View Rankings
@@ -70,12 +69,14 @@ export default function TopCreators() {
                             />
 
                             <motion.div
-                                className="relative p-6 bg-[#1A1A1A] rounded-2xl group-hover:bg-[#2A2A2A] transition-colors duration-300"
+                                className="relative p-6 bg-[#202020] rounded-2xl group-hover:bg-[#717171] transition-colors duration-300 
+                                [box-shadow:11.933px_-11.933px_11.933px_rgba(45,45,45,0.1)_inset,_-11.933px_11.933px_11.933px_rgba(255,255,255,0.1)_inset] 
+                                [backdrop-filter:blur(11.933px)]"
                                 whileHover={{ scale: 1.02 }}
                                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
                             >
                                 {/* Rank Number */}
-                                <div className="absolute top-4 left-4 w-8 h-8 flex items-center justify-center bg-[#2A2A2A] group-hover:bg-[#1A1A1A] rounded-full">
+                                <div className="absolute top-4 left-4 w-8 h-8 flex items-center justify-center bg-[#1A1A1A] group-hover:bg-[black] rounded-full">
                                     <span className="text-white/80 text-sm font-medium">{creator.rank}</span>
                                 </div>
 
@@ -110,10 +111,10 @@ export default function TopCreators() {
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.2 }}
                                 >
-                                    <h3 className="text-xl font-bold text-white group-hover:text-[#A259FF] transition-colors duration-300">
+                                    <h3 className="text-xl font-bold text-white transition-colors duration-300">
                                         {creator.name}
                                     </h3>
-                                    <div className="flex items-center justify-center space-x-1 text-white/60">
+                                    <div className="flex items-center justify-center space-x-1 text-[#A0A0A0]">
                                         <span>Total Sales:</span>
                                         <span className="font-medium text-white">{creator.totalSales}</span>
                                     </div>

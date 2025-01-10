@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FileText, Rocket } from "lucide-react";
-import Logo from "../../../public/images/hero.png";
+import Logo from "../../../public/images/hero.svg";
 import Avatar from "../../../public/images/avatar.png";
 export default function Hero() {
   return (
@@ -24,7 +24,7 @@ export default function Hero() {
             <div className="flex justify-center sm:justify-start flex-wrap gap-8">
               <button className="flex items-center space-x-3 bg-gradient-to-r from-[#A259FF] to-[#377DF7] hover:from-transparent hover:to-transparent border-[#A259FF] border-2 text-white px-8 md:px-10 py-4 rounded-full transition-all">
                 <FileText className="w-5 h-5" />
-                <span>Go to Deck</span>
+                <span>White Paper</span>
               </button>
               <button className="flex items-center space-x-3 bg-gradient-to-r from-[#A259FF] to-[#377DF7] hover:from-transparent hover:to-transparent border-[#A259FF] border-2 text-white px-8 md:px-10 py-4 rounded-full transition-all">
                 <Rocket className="w-5 h-5" />
@@ -50,7 +50,7 @@ export default function Hero() {
           </div>
 
           {/* Avatar */}
-          <div className="relative lg:h-[450px] w-full rounded-2xl overflow-hidden hiden flex-col lg:flex">
+          <div className="relative h-[580px] w-full rounded-2xl overflow-hidden hiden flex-col lg:flex">
             {/* Image */}
             <div className="relative flex-grow">
               <Image
@@ -58,6 +58,7 @@ export default function Hero() {
                 alt="Space Walking"
                 fill
                 className="object-cover"
+                quality={100}
                 priority
               />
             </div>

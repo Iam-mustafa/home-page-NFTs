@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { Eye } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import Mushroom from '../../../public/images/trendingCollection/mushroom.png'
+import Mushroom from '../../../public/images/mushroom.png'
 import Avatar from '../../../public/images/trendingCollection/shroomie.png'
 
 export default function FeaturedNFT() {
@@ -42,11 +42,12 @@ export default function FeaturedNFT() {
       >
         {/* Background Image */}
         <Image
-          src={Mushroom}
-          alt="Magic Mushrooms NFT"
-          fill
-          className="object-cover"
-          priority
+           src={Mushroom}
+           alt="Magic Mushrooms NFT"
+           fill
+           quality={100}
+           priority
+           className="object-cover"
         />
         
         {/* Gradient Overlay */}
@@ -65,24 +66,26 @@ export default function FeaturedNFT() {
               >
                 {/* Artist Tag */}
                 <motion.div 
-                  className="inline-flex items-center space-x-4 bg-black backdrop-blur-sm rounded-full px-4 py-2"
+                  className="inline-flex items-center gap-[12px] bg-black backdrop-blur-sm rounded-[20px] px-[20px] py-[10px]"
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
-                  <div className="relative w-8 h-8 rounded-full overflow-hidden">
+                  <div className="relative w-6 h-6 rounded-full overflow-hidden">
                     <Image
                       src={Avatar}
                       alt="Shroomie"
                       fill
+                      quality={100}
+                      priority
                       className="object-cover"
                     />
                   </div>
-                  <span className="text-white font-medium">Shroomie</span>
+                  <span className="text-white text-[16px] font-normal ">Shroomie</span>
                 </motion.div>
 
                 {/* Title */}
                 <motion.h1 
-                  className="text-3xl md:text-5xl font-bold text-white"
+                  className="text-3xl md:text-[51px] font-semibold text-white leading-[56.1px] capitalize md:leading-[56.1px]"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.7, duration: 0.8 }}
@@ -97,9 +100,9 @@ export default function FeaturedNFT() {
                   transition={{ delay: 0.9, duration: 0.8 }}
                 >
                   <button 
-                    className="flex items-center space-x-4 bg-white hover:bg-white/90 text-black text-sm font-bold rounded-full px-8 py-4"
+                    className="flex items-center w-[40%] space-x-4 bg-[#FF7262] border-transparent border-2 hover:border-[#A259FF] hover:border-2 text-[#1A1A1A] text-sm font-bold rounded-full md:px-12 md:py-4"
                   >
-                    <Eye className="mr-2 h-5 w-5 text-[#A259FF]" />
+                    <Eye className="mr-2 h-5 w-5" />
                     See NFT
                   </button>
                 </motion.div>
