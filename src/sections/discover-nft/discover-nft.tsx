@@ -34,21 +34,21 @@ export default function DiscoverNFTs() {
                 {/* Header */}
                 <div className="flex justify-between items-start mb-16">
                     <motion.div
-                        className="space-y-4 w-1/2"
+                        className="space-y-4 w-full sm:w-1/2"
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
                         <motion.h2
-                            className="text-4xl font-semibold text-white"
+                            className="text-3xl lg:text-4xl font-semibold text-white"
                             whileHover={{ scale: 1.02 }}
                             transition={{ type: "spring", stiffness: 400, damping: 10 }}
                         >
                             Discover More NFTs
                         </motion.h2>
                         <motion.p
-                            className="text-xl text-white"
+                            className="text-base lg:text-xl text-white"
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
@@ -65,7 +65,7 @@ export default function DiscoverNFTs() {
                         transition={{ duration: 0.6 }}
                     >
                         <button
-                            className="flex justify-center items-center space-x-3 bg-gradient-to-r from-[#A259FF] to-[#377DF7] hover:from-transparent hover:to-transparent border-2 border-[#A259FF] text-white rounded-full px-10 py-3"
+                            className="hidden sm:flex justify-center items-center space-x-3 bg-gradient-to-r from-[#A259FF] to-[#377DF7] hover:from-transparent hover:to-transparent border-2 border-[#A259FF] text-white rounded-full px-10 py-3"
                         >
                             <Eye className="mr-2 h-5 w-5" />
                             See All

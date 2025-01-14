@@ -44,14 +44,14 @@ export default function HowItWorks() {
           transition={{ duration: 0.6 }}
         >
           <motion.h2 
-            className="text-4xl font-semibold text-white"
+            className="text-3xl lg:text-4xl font-semibold text-white"
             // whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             How It Works
           </motion.h2>
           <motion.p 
-            className="text-xl text-white"
+            className="text-base lg:text-xl text-white"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}

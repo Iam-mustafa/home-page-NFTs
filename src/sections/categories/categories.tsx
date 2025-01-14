@@ -16,7 +16,7 @@ export default function BrowseCategories() {
           transition={{ duration: 0.6 }}
         >
           <motion.h2 
-            className="text-4xl font-semibold text-white"
+            className="text-3xl lg:text-4xl font-semibold text-white"
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             Browse Categories

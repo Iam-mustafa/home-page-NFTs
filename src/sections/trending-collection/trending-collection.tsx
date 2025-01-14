@@ -8,7 +8,7 @@ export default function TrendingCollection() {
 
     return (
         <section className="w-full py-24 relative">
-            <div className="container mx-auto px-4 md:px-40 relative">
+            <div className="container mx-auto px-7 sm:px-35 lg:px-40 relative">
                 {/* Header */}
                 <motion.div
                     className="mb-16 space-y-4"
@@ -18,13 +18,13 @@ export default function TrendingCollection() {
                     transition={{ duration: 0.6 }}
                 >
                     <motion.h2
-                        className="text-4xl font-semibold text-white"
+                        className="text-3xl lg:text-4xl font-semibold text-white"
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                     >
                         Trending Collection
                     </motion.h2>
                     <motion.p
-                        className="text-xl text-white"
+                        className="text-base lg:text-xl text-white"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
@@ -35,7 +35,7 @@ export default function TrendingCollection() {
                 </motion.div>
 
                 {/* Collections Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {collections.map((collection, index) => (
                         <motion.div
                             key={collection.id}

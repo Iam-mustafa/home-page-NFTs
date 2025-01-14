@@ -8,17 +8,17 @@ import {creators} from './data'
 export default function TopCreators() {
     return (
         <section className="w-full py-24 relative">
-            <div className="container mx-auto px-4 md:px-40">
+            <div className="container mx-auto px-7 sm:px-35 lg:px-40">
                 <div className="flex justify-between items-start mb-16">
                     <motion.div
-                        className="space-y-4 w-1/2 md:w-2/3"
+                        className="space-y-4 w-2/3"
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
                         <motion.h2
-                            className="text-4xl font-semibold text-white"
+                            className="text-3xl lg:text-4xl font-semibold text-white"
                             transition={{ type: "spring", stiffness: 400, damping: 10 }}
                         >
                             Top Creators
@@ -41,7 +41,7 @@ export default function TopCreators() {
                         transition={{ duration: 0.6 }}
                     >
                         <button
-                            className="flex justify-center items-center space-x-2 bg-gradient-to-r from-[#A259FF] to-[#377DF7] hover:from-transparent hover:to-transparent border-2 border-[#A259FF] text-white test-xs md:text-md rounded-full px-5 md:px-10 py-3"
+                            className="hidden sm:flex justify-center items-center space-x-2 bg-gradient-to-r from-[#A259FF] to-[#377DF7] hover:from-transparent hover:to-transparent border-2 border-[#A259FF] text-white test-xs md:text-md rounded-full px-5 md:px-10 py-3"
                         >
                             <RocketIcon className="h-5 w-6 mr-2" />
                             View Rankings
